@@ -1608,7 +1608,7 @@ def bot(op):
 									ki.sendText(msg.to,"Group cleanse")
 									kk.sendText(msg.to,"Group cleanse")
             elif "Cipok" in msg.text:
-              if msg.from_ in owner:
+              if msg.from_ in admin:
                  targets = []
                  key = eval(msg.contentMetadata["MENTION"])
                  key["MENTIONEES"] [0] ["M"]
@@ -1741,7 +1741,7 @@ def bot(op):
 
 #------------------------------------------------------------------
             elif "Ban all" in msg.text:
-              if msg.from_ in owner:
+              if msg.from_ in admin:
                 if msg.toType == 2:
                   gs = cl.getGroup(msg.to)
                   targets = []
@@ -1763,31 +1763,31 @@ def bot(op):
                           cl.sendText(msg.to,"Terbanned ~")
                         except:
                           cl.sendText(msg.to,"Error")
-             elif "Unban all" in msg.text:
+            elif "Unban all" in msg.text:
               if msg.from_ in admin:
                  if msg.toType == 2:
-                     print "[Unban]ok"
-                     gs = cl.getGroup(msg.to)
-                     #gs = ki.getGroup(msg.to)
-                     #gs = kk.getGroup(msg.to)
-                     #gs = kc.getGroup(msg.to)
-                     #gs = ks.getGroup(msg.to)
-                     #gs = ka.getGroup(msg.to)
-                     #gs = kb.getGroup(msg.to)
-                     targets = []
-                     for g in gs.members:
-                         targets.append(g.mid)
-                     if targets == []:
-                         cl.sendText(msg.to,"Not found ~")
-                     else:
-                         for target in targets:
-                             try:
-                                 del wait["blacklist"][target]
-                                 #f=codecs.open('st2__b.json','w','utf-8')
-                                 #json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                 cl.sendText(msg.to,"Sukses Clear ban ~")
-                             except:
-                                 cl.sendText(msg.to,"Error")
+                    print "[Unban]ok"
+                    gs = cl.getGroup(msg.to)
+                    #gs = ki.getGroup(msg.to)
+                    #gs = kk.getGroup(msg.to)
+                    #gs = kc.getGroup(msg.to)
+                    #gs = ks.getGroup(msg.to)
+                    #gs = ka.getGroup(msg.to)
+                    #gs = kb.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Not found ~")
+                    else:
+                        for target in targets:
+                            try:
+                                del wait["blacklist"][target]
+                                #f=codecs.open('st2__b.json','w','utf-8')
+                                #json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+                                cl.sendText(msg.to,"Sukses Clear ban ~")
+                            except:
+                                cl.sendText(msg.to,"Error")
             elif msg.text in ["Cek ban"]:
 				if msg.from_ in admin:
 					if msg.toType == 2:
