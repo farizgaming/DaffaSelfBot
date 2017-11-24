@@ -1607,7 +1607,7 @@ def bot(op):
 								except:
 									ki.sendText(msg.to,"Group cleanse")
 									kk.sendText(msg.to,"Group cleanse")
-            elif "Cipok","Muach" in msg.text:
+            elif "Cipok" in msg.text:
               if msg.from_ in owner:
                  targets = []
                  key = eval(msg.contentMetadata["MENTION"])
