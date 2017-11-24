@@ -4,30 +4,18 @@ import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from io import StringIO
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,sys
-import re,string,os
-import os.path,sys,urllib,shutil,subprocess
+import time,random,sys,json,codecs,threading,glob,sys,re
 
 cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-ki = LINETCR.LINE()
-ki.login(qr=True)
-ki.loginResult()
+kk=ki=ks=cl
 
-kk = LINETCR.LINE()
-kk.login(qr=True)
-kk.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(qr=True)
-ks.loginResult()
-
-print "login success"
+print "1DaffaN3Kalani login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""〘тєαм вσт є∂ιтє∂〙
+helpMessage ="""〘👑1DaffaN3Kalani👑〙
 ╔══════════════════════  
 ║☁̸҉̸.̸҉ =ȼ๏ʍʍąɲď β๏ţ  ̸҉̸.̸҉̸☁
 ╠══════════════════════
@@ -97,18 +85,6 @@ ki2mid = ks.getProfile().mid
 Bots = [mid,Amid,kimid,ki2mid]
 administrator = ["uec13f3c18fd696fe7c2ffd4c7e001a31"]
 admin = ["uec13f3c18fd696fe7c2ffd4c7e001a31"]
-me = cl.getProfile().mid
-bot1 = cl.getProfile().mid
-main = cl.getProfile().mid
-kicker1 = ki.getProfile().mid
-bots = me + kicker1
-protectname = []
-protecturl = []
-protection = []
-autocancel = {}
-autoinvite = []
-autoleaveroom = []
-
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -116,9 +92,9 @@ wait = {
     'leaveRoom':False,
     'timeline':False,
     'autoAdd':False,
-    'message':"Thanks add",
+    'message':"Thanks for add me",
     "lang":"JP",
-    "comment":"Auto like ̶ᴛ̶̶ᴇ̶̶ᴀ̶̶ᴍ̶ ̶ʙ̶̶ᴏ̶̶ᴛ̶ ̶ᴇ̶̶ᴅ̶̶ɪ̶̶ᴛ̶̶ᴇ̶̶ᴅ̶",
+    "comment":"Auto like ̶By 1DaffaN3Kalani",
     "likeOn":False,
     "commentOn":False,
     "commentBlack":{},
