@@ -382,7 +382,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u0f4cbccff2b03754d07d8db8707023f6"
+                if msg.from_ == "u0f4cbccff2b03754d07d8db8707023f6":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
