@@ -9,22 +9,22 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EngHYzPB5I1GTzp1zvn6.d0Y8Z+kWn1tqFy24ChaJ9G.DXMhvcMAv1SNV7eHUTqcTi6jMP+jIlfuGtn86L0uCj4=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="Enz4tEmsmoOYr4xtdhN9.ZKUHmn7A7fy0TpGtw0PFQq.RFxoKDulTPRIrsyodtfWATNL0nemYnkk3Hwp2PURq5Y=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(qr=True)
+kk.login(token="EnirIkjU0ce97Wj9J5Z1.cnCKeS8mJyEU5JSZppFleq.tI2oWWJdvywyFjYCYbwddydbV+kEL8Qphgv43b1Kq1w=")
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(qr=True)
+ks.login(token="EnTMx0i0ikVlE90jKQt3.GVE7Mhfuf8np4BF6WMpOKW.Dlg2xUzIpUxZ1G4wWUN9JIlTqqJen9EhZmeNSDIe+YQ=")
 ks.loginResult()
 
-print "login success"
+print "1DaffaN3Kalani login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""〘👑1DaffaN3Kalani👑〙
@@ -2278,7 +2278,7 @@ def autoSta():
                       if posts["userInfo"]["writerMid"] in wait["commentBlack"]:
                          pass
                       else:
-                          cl.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"]
+                          cl.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
         except:
             count += 1
             if(count == 50):
