@@ -9,19 +9,19 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EngHYzPB5I1GTzp1zvn6.d0Y8Z+kWn1tqFy24ChaJ9G.DXMhvcMAv1SNV7eHUTqcTi6jMP+jIlfuGtn86L0uCj4=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="Enz4tEmsmoOYr4xtdhN9.ZKUHmn7A7fy0TpGtw0PFQq.RFxoKDulTPRIrsyodtfWATNL0nemYnkk3Hwp2PURq5Y=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EnirIkjU0ce97Wj9J5Z1.cnCKeS8mJyEU5JSZppFleq.tI2oWWJdvywyFjYCYbwddydbV+kEL8Qphgv43b1Kq1w=")
+kk.login(qr=True)
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EnTMx0i0ikVlE90jKQt3.GVE7Mhfuf8np4BF6WMpOKW.Dlg2xUzIpUxZ1G4wWUN9JIlTqqJen9EhZmeNSDIe+YQ=")
+ks.login(qr=True)
 ks.loginResult()
 
 print "1DaffaN3Kalani login success"
@@ -106,7 +106,7 @@ wait = {
     'autoAdd':False,
     'message':"Thanks For Add Me By 􀰂􀰂􀰂􀰂[數]@1DaffaN3Kalani☪ইद 􀂳􏿿",
     "lang":"JP",
-    "comment":"Auto Like By  􀰂􀰂􀰂􀰂[數]@1DaffaN3Kalani☪ইद 􀂳􏿿",
+    "comment":"Auto Like By  􀰂􀰂􀰂􀰂[數]@1DaffaN3Kalani☪ইद\n\nhttp://line.me/ti/p/H2VZm0LFeR",
     "likeOn":True,
     "commentOn":True,
     "commentBlack":{},
